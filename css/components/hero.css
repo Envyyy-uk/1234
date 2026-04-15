@@ -1,0 +1,64 @@
+/* ===== HERO SECTION ===== */
+
+.hero {
+    background: linear-gradient(135deg, #1a2a6c, #2a4858);
+    color: var(--white);
+
+    /* Відступи всередині */
+    padding: 100px 40px;
+
+    /* Вирівнювання і ширина */
+    max-width: 1200px;
+    margin: 40px auto;
+
+    text-align: center;
+
+    /* Вигляд */
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Заголовок */
+.hero h1 {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+/* Текст */
+.hero p {
+    font-size: 1.25rem;
+    max-width: 750px;
+    margin: 0 auto 40px;
+    opacity: 0.9;
+}
+
+/* Контейнер кнопок */
+.hero-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+    .hero {
+        margin: 20px;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.05rem;
+    }
+
+    .hero-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
